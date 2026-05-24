@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основи кібербезпеки</title>
+
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Основи інформаційної безпеки</h1>
+        <p>Навчальний проєкт для учнів 10–11 класів</p>
+    </header>
+
+    <nav>
+        <a href="#theory">Теорія</a>
+        <a href="#practice">Практика</a>
+        <a href="#tests">Тести</a>
+        <a href="#resources">Ресурси</a>
+    </nav>
+
+    <main>
+
+        <section id="theory">
+            <h2>Теоретичний блок</h2>
+
+            <div class="card">
+                <h3>Що таке кібербезпека?</h3>
+
+                <p>
+                    Кібербезпека — це захист комп’ютерних систем,
+                    мереж та персональних даних від цифрових загроз.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Основні кіберзагрози</h3>
+
+                <ul>
+                    <li>Фішинг</li>
+                    <li>Комп’ютерні віруси</li>
+                    <li>Шахрайські сайти</li>
+                    <li>Витік персональних даних</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="practice">
+            <h2>Практичні завдання</h2>
+
+            <div class="card">
+                <p>
+                    Проаналізуйте приклад повідомлення та визначте,
+                    чи є воно фішинговим.
+                </p>
+
+                <button onclick="showMessage()">
+                    Показати відповідь
+                </button>
+
+                <p id="result"></p>
+            </div>
+        </section>
+
+        <section id="tests">
+            <h2>Самоперевірка</h2>
+
+            <div class="card">
+
+                <p>
+                    Який пароль є найбезпечнішим?
+                </p>
+
+                <button onclick="checkAnswer('wrong')">
+                    123456
+                </button>
+
+                <button onclick="checkAnswer('wrong')">
+                    qwerty
+                </button>
+
+                <button onclick="checkAnswer('correct')">
+                    G7#kL9!pQ2
+                </button>
+
+                <p id="test-result"></p>
+
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Корисні ресурси</h2>
+
+            <div class="card">
+                <ul>
+                    <li>
+                        <a href="https://cyberpolice.gov.ua/" target="_blank">
+                            Кіберполіція України
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://edu.gcfglobal.org/en/internet-safety/" target="_blank">
+                            Internet Safety
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="scripts/interactive.js"></script>
+
+</body>
+</html>
